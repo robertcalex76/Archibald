@@ -1,3 +1,5 @@
+below is all ai generated i didnt write this. will update as i add functionality
+
 # Archibald - AI Assistant for Calendar and Email
 
 This project sets up a local AI model on your NVIDIA 5070ti GPU to provide suggestions and work assistance by ingesting calendar and email data.
