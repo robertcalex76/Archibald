@@ -18,6 +18,20 @@ This project sets up a local AI model on your NVIDIA 5070ti GPU to provide sugge
 
 API documentation available at http://127.0.0.1:8000/docs when running.
 
+### Query Examples
+
+To query the application, send a POST request to `/generate` with a JSON body containing the `prompt`.
+
+Using PowerShell (Invoke-WebRequest):
+```
+Invoke-WebRequest -Uri "http://127.0.0.1:8000/generate" -Method POST -Body '{"prompt": "Summarize my day"}' -ContentType "application/json"
+```
+
+Using curl (in bash/cmd, if installed):
+```
+curl -X POST "http://127.0.0.1:8000/generate" -H "Content-Type: application/json" -d '{"prompt": "What are my upcoming meetings?"}'
+```
+
 ## Features
 
 - Local AI model inference using Hugging Face Transformers (DialoGPT-medium)
